@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Survey Form</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div id="container">
+      <h1 id="title">School Music Class Survery</h1>
+      <p id="description">Help school's music community improves by perticipating in this survey.</p>
+
+      <form id="survey-form">
+         <fieldset id="personal-info">
+            <legend>Personal information</legend>
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Type your name" required>
+            <br>
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Type your email" required>
+            <br>
+            <label for="number" id="number-label">Phone:</label>
+            <input type="number" id="number" min="11" max="20" name="phone-number" placeholder="Phone number" required>
+         </fieldset>
+
+         <fieldset id="music-genre">
+            <legend>What is your favourite music genre?</legend>
+            <select id="dropdown">
+               <option value="classical">Classical</option>
+               <option value="jazz">Jazz</option>
+               <option value="pop">Pop</option>
+               <option value="r&b">R&B</option>
+               <option value="rock">Rock</option>
+            </select>
+         </fieldset>
+
+         <fieldset id="musical-instruments">
+            <legend>What instrument do you play?</legend>
+            <input type="radio" name="instrument" value="piano">
+            <label for="piano" id="instrument-label">Piano</label><br>
+            <input type="radio" name="instrument" value="guitar">
+            <label for="guitar" id="instrument-label">Guitar</label><br>
+            <input type="radio" name="instrument" value="violin">
+            <label for="violin" id="instrument-label">Violin</label><br>
+            <input type="radio" name="instrument" value="saxophone">
+            <label for="saxophone" id="instrument-label">Saxophone</label><br>
+            <input type="radio" name="instrument" value="drum">
+            <label for="drum" id="instrument-label">Drum</label><br>
+         </fieldset>
+
+         <fieldset id="fav-artists">
+            <legend>Who are your favourite artists among below?</legend>
+            <input type="checkbox" name="artists" value="Adele">
+            <label for="Adele" id="artists">Adele</label><br>
+            <input type="checkbox" name="artists" value="Bruno-Mars">
+            <label for="Bruno-Mars" id="artists">Bruno Mars</label><br>
+            <input type="checkbox" name="artists" value="Etta-James">
+            <label for="Etta-James" id="artists">Etta James</label><br>
+            <input type="checkbox" name="artists" value="Elton-John">
+            <label for="Elton-John" id="artists">Elton John</label><br>
+            <input type="checkbox" name="artists" value="Michael-Bubble">
+            <label for="Michael-Bubble" id="artists">Michael Bubble</label><br>
+            <input type="checkbox" name="artists" value="John-Legend">
+            <label for="John-Legend" id="artists">John Legend</label><br>
+            <input type="checkbox" name="artists" value="Mariah-Carey">
+            <label for="Mariah-Carey" id="artists">Mariah Carey</label><br>
+         </fieldset>
+
+         <fieldset id="comment-box">
+            <legend>Any comments or suggestion about the music class?</legend>
+            <textarea id="comments" name="comments" placeholder="Write your comments here"></textarea>
+         </fieldset>
+         <input type="submit" id="submit">
+
+      </form>
+
+   </div>
+</body>
+
+</html>
