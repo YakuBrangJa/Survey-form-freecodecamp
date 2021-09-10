@@ -107,3 +107,17 @@ textarea:focus {
 #submit:active {
   transform: scale(0.99);
 }
+
+/* responsive */
+@media (max-width: 560px) {
+  fieldset {
+    padding: 5px;
+  }
+  #personal-info label {
+    width: 50px;
+    padding: 4px 4px;
+  }
+  #personal-info input {
+    width: calc(100% - 60px);
+  }
+}
